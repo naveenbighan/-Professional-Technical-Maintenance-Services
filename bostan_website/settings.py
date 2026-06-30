@@ -2,15 +2,26 @@
 Django settings for bostan_website project.
 Bustan Altoor Technical Services website.
 """
+
+import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-Bustan-Altoor-secret-key-change-in-production'
+# SECURITY WARNING: keep the secret key secret in production!
+SECRET_KEY = os.environ.get(
+    "SECRET_KEY",
+    "django-insecure-Bustan-Altoor-secret-key-change-in-production"
+)
 
-DEBUG = True
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    ".onrender.com",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -72,7 +83,9 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = '/media/'
