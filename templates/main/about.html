@@ -1,0 +1,132 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}About Us - Bustan Altoor Technical Services{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+        <div class="page-header-content" data-aos="fade-up">
+            <h1>About Us</h1>
+            <nav class="breadcrumb">
+                <a href="{% url 'main:home' %}">Home</a>
+                <span>/</span>
+                <span>About Us</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section section-padding">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-images" data-aos="fade-right">
+                <img src="{% static 'images/about-main.jpg' %}" alt="About Bustan Altoor" class="about-img-main">
+                <div class="experience-badge">
+                    <h3>10+</h3>
+                    <p>Years of<br>Experience</p>
+                </div>
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <span class="section-subtitle">About Our Company</span>
+                <h2 class="section-title">Your Trusted Partner for Quality Services in UAE</h2>
+                <p>Bustan Altoor Technical Services is a professional technical services company based in Dubai, UAE.
+                    With a commitment to excellence and customer satisfaction, we have built a strong reputation for
+                    delivering high-quality property improvement and maintenance services.</p>
+                <p>We provide a wide range of solutions including alternative energy equipment installation and
+                    maintenance, floor and wall tiling, carpentry and wood flooring, engraving and ornamentation,
+                    wallpaper fixing, false ceiling and light partition installation, and electrical fittings and
+                    fixture maintenance.</p>
+                <p>Our team of skilled professionals uses modern equipment, quality materials, and proven techniques to
+                    ensure every project is completed to the highest standards.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-award"></i>
+                        <h4>Certified Experts</h4>
+                        <p>Licensed and trained professionals</p>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-users"></i>
+                        <h4>Dedicated Team</h4>
+                        <p>Committed to your satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Vision -->
+<section class="mission-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Our Foundation</span>
+            <h2 class="section-title">Mission, Vision & Values</h2>
+        </div>
+        <div class="mission-grid">
+            <div class="mission-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="mission-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Our Mission</h3>
+                <p>To deliver exceptional technical and maintenance services that exceed customer expectations, while
+                    building lasting relationships based on trust, quality, and reliability.</p>
+            </div>
+            <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="mission-icon"><i class="fas fa-eye"></i></div>
+                <h3>Our Vision</h3>
+                <p>To be the leading technical services provider in the UAE and beyond, recognized for our innovation,
+                    professionalism, and commitment to excellence in every project.</p>
+            </div>
+            <div class="mission-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="mission-icon"><i class="fas fa-heart"></i></div>
+                <h3>Our Values</h3>
+                <p>Integrity, quality, customer focus, safety, and sustainability form the core of everything we do. We
+                    treat every property as if it were our own.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-smile"></i>
+                <h3>500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-project-diagram"></i>
+                <h3>1000+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-user-tie"></i>
+                <h3>50+</h3>
+                <p>Expert Workers</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-trophy"></i>
+                <h3>15+</h3>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+            <h2>Let's Work Together</h2>
+            <p>Get in touch with our team to discuss your next project. We're here to help you achieve excellence.</p>
+            <a href="{% url 'main:contact' %}" class="btn btn-white">Get In Touch</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

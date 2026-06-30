@@ -1,0 +1,231 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Our Services - Bustan Altoor Technical Services{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+        <div class="page-header-content" data-aos="fade-up">
+            <h1>Our Services</h1>
+            <nav class="breadcrumb">
+                <a href="{% url 'main:home' %}">Home</a>
+                <span>/</span>
+                <span>Services</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-page section-padding">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">What We Offer</span>
+            <h2 class="section-title">Comprehensive Technical Services</h2>
+            <p class="section-description">From alternative energy equipment to finishing works and electrical
+                maintenance, we provide dependable technical services for residential and commercial clients in Dubai.
+            </p>
+        </div>
+
+        <div class="services-list">
+
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="{% static 'images/service-alternative-energy.jpg' %}"
+                        alt="Alternative Energy Equipment Installation and Maintenance">
+                </div>
+                <div class="service-info">
+                    <div class="service-info-icon"><i class="fas fa-solar-panel"></i></div>
+                    <h3>Alternative Energy Equipment Installation and Maintenance</h3>
+                    <p>We support alternative energy equipment with careful installation, inspection, and maintenance
+                        services for residential and commercial properties.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Equipment Installation Support</li>
+                        <li><i class="fas fa-check"></i> Preventive Maintenance</li>
+                        <li><i class="fas fa-check"></i> System Inspection & Testing</li>
+                        <li><i class="fas fa-check"></i> Residential & Commercial Service</li>
+                    </ul>
+                    <a href="{% url 'main:contact' %}" class="btn btn-primary">Book Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-row reverse" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="{% static 'images/service-tile.jpg' %}" alt="Floor & Wall Tiling Works">
+                </div>
+                <div class="service-info">
+                    <div class="service-info-icon"><i class="fas fa-th-large"></i></div>
+                    <h3>Floor & Wall Tiling Works</h3>
+                    <p>Expert tile installation, replacement, and repair services for floors and walls. Our skilled
+                        technicians handle ceramic, porcelain, marble, and mosaic tiles with precision.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tile Installation & Replacement</li>
+                        <li><i class="fas fa-check"></i> Grouting & Re-grouting</li>
+                        <li><i class="fas fa-check"></i> Tile Repair & Restoration</li>
+                        <li><i class="fas fa-check"></i> Waterproofing Solutions</li>
+                    </ul>
+                    <a href="{% url 'main:contact' %}" class="btn btn-primary">Book Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="{% static 'images/service-carpentry.jpg' %}" alt="Carpentry & Wood Flooring Works">
+                </div>
+                <div class="service-info">
+                    <div class="service-info-icon"><i class="fas fa-hammer"></i></div>
+                    <h3>Carpentry & Wood Flooring Works</h3>
+                    <p>Custom carpentry and wood flooring solutions for residential and commercial interiors, delivered
+                        with accurate fitting, clean finishing, and durable workmanship.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Wood Flooring Installation</li>
+                        <li><i class="fas fa-check"></i> Custom Carpentry Works</li>
+                        <li><i class="fas fa-check"></i> Door, Cabinet & Fixture Fitting</li>
+                        <li><i class="fas fa-check"></i> Wood Repair & Finishing</li>
+                    </ul>
+                    <a href="{% url 'main:contact' %}" class="btn btn-primary">Book Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-row reverse" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="{% static 'images/service-painting.jpg' %}" alt="Engraving & Ornamentation Works">
+                </div>
+                <div class="service-info">
+                    <div class="service-info-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Engraving & Ornamentation Works</h3>
+                    <p>Decorative engraving and ornamentation works for interior surfaces, wood features, partitions,
+                        and finishing details that need a refined appearance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Decorative Surface Detailing</li>
+                        <li><i class="fas fa-check"></i> Wood Ornamentation</li>
+                        <li><i class="fas fa-check"></i> Interior Feature Finishing</li>
+                        <li><i class="fas fa-check"></i> Custom Design Execution</li>
+                    </ul>
+                    <a href="{% url 'main:contact' %}" class="btn btn-primary">Book Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="{% static 'images/service-wallpaper.jpg' %}" alt="Wallpaper Fixing Works">
+                </div>
+                <div class="service-info">
+                    <div class="service-info-icon"><i class="fas fa-scroll"></i></div>
+                    <h3>Wallpaper Fixing Works</h3>
+                    <p>Professional wallpaper fixing and replacement with proper wall preparation, alignment, and
+                        finishing for clean, elegant interiors.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Wallpaper Installation</li>
+                        <li><i class="fas fa-check"></i> Wallpaper Removal & Replacement</li>
+                        <li><i class="fas fa-check"></i> Wall Surface Preparation</li>
+                        <li><i class="fas fa-check"></i> Pattern Alignment & Finishing</li>
+                    </ul>
+                    <a href="{% url 'main:contact' %}" class="btn btn-primary">Book Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-row reverse" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="{% static 'images/service-plumbing.jpg' %}"
+                        alt="False Ceiling & Light Partitions Installation">
+                </div>
+                <div class="service-info">
+                    <div class="service-info-icon"><i class="fas fa-border-all"></i></div>
+                    <h3>False Ceiling & Light Partitions Installation</h3>
+                    <p>False ceiling and light partition installation for practical, polished interiors, including
+                        framing, fitting, and finishing coordination.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> False Ceiling Installation</li>
+                        <li><i class="fas fa-check"></i> Light Partition Works</li>
+                        <li><i class="fas fa-check"></i> Framing & Board Fixing</li>
+                        <li><i class="fas fa-check"></i> Neat Interior Finishing</li>
+                    </ul>
+                    <a href="{% url 'main:contact' %}" class="btn btn-primary">Book Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="{% static 'images/service-electrical.jpg' %}"
+                        alt="Electrical Fittings & Fixtures Repairing & Maintenance">
+                </div>
+                <div class="service-info">
+                    <div class="service-info-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Electrical Fittings & Fixtures Repairing & Maintenance</h3>
+                    <p>Reliable repairing and maintenance for electrical fittings and fixtures, handled with attention
+                        to safety, performance, and clean workmanship.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Electrical Fixture Repairs</li>
+                        <li><i class="fas fa-check"></i> Fittings Maintenance</li>
+                        <li><i class="fas fa-check"></i> Lighting & Switchgear Support</li>
+                        <li><i class="fas fa-check"></i> Safety Checks & Troubleshooting</li>
+                    </ul>
+                    <a href="{% url 'main:contact' %}" class="btn btn-primary">Book Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section section-padding">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Our Process</span>
+            <h2 class="section-title">How We Work</h2>
+            <p class="section-description">A simple, transparent process designed for your convenience</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-number">01</div>
+                <i class="fas fa-phone-volume"></i>
+                <h3>Contact Us</h3>
+                <p>Reach out via phone, email, or our contact form with your requirements.</p>
+            </div>
+            <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-number">02</div>
+                <i class="fas fa-clipboard-check"></i>
+                <h3>Site Inspection</h3>
+                <p>We assess your needs and provide a detailed quotation and plan.</p>
+            </div>
+            <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-number">03</div>
+                <i class="fas fa-tools"></i>
+                <h3>Service Execution</h3>
+                <p>Our expert team delivers quality work on time and within budget.</p>
+            </div>
+            <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                <div class="process-number">04</div>
+                <i class="fas fa-star"></i>
+                <h3>Quality Check</h3>
+                <p>Final inspection and your satisfaction guarantee on all work.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+            <h2>Need Our Services?</h2>
+            <p>Get a free quote today. Our team is ready to handle your next project with professionalism and care.</p>
+            <a href="{% url 'main:contact' %}" class="btn btn-white">Request a Quote</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
